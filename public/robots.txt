@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siachecker.co.uk/sitemap.xml
