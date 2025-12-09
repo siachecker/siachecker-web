@@ -57,16 +57,16 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="mb-6 font-bold text-5xl md:text-6xl lg:text-7xl tracking-tight text-balance">
-            Verify UK SIA Licences{" "}
+            Simple API for SIA{" "}
             <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-violet-700 bg-clip-text text-transparent">
-              in milliseconds
+              Licence Verification
             </span>
           </h1>
 
           {/* Subheading */}
           <p className="mb-8 text-lg md:text-xl text-purple-800 max-w-2xl mx-auto text-pretty">
-            Developer-friendly REST API for instant SIA licence verification. Real-time checks, comprehensive data, and
-            built for scale.
+            Reliable, scalable and developer-friendly SIA licence checks with clean JSON data —
+            no scraping, no manual work, and no upstream headaches.
           </p>
 
           {/* CTA Buttons */}

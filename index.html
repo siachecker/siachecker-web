@@ -1,13 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>siachecker-web</title>
-  </head>
-  <body>
+
+    <title>SIA Checker – Simple API for Automated UK SIA Licence Verification</title>
+
+    <meta name="description" content="Simple API for automated UK SIA licence verification. Reliable, scalable and developer-friendly SIA licence checks with clean JSON data and zero scraping." />
+    <meta name="keywords" content="SIA licence verification API, UK SIA check, verify SIA licence, SIA Checker, SIA licence API, automated licence verification, security industry authority API" />
+    <meta name="author" content="SIA Checker" />
+    <link rel="canonical" href="https://siachecker.co.uk" />
+
+    <meta property="og:title" content="SIA Checker – Simple API for Automated UK SIA Licence Verification" />
+    <meta property="og:description" content="A simple, reliable API for automated UK SIA licence verification. Clean JSON data with no scraping or manual checks." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://siachecker.co.uk" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SIA Checker – Simple API for Automated UK SIA Licence Verification" />
+    <meta name="twitter:description" content="Simple and reliable API for automated SIA licence checks with clean JSON data." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "SIA Checker",
+            "url": "https://siachecker.co.uk",
+            "description": "Simple and scalable API for automated UK SIA licence verification with clean JSON data and zero scraping.",
+            "applicationCategory": "API",
+            "operatingSystem": "Any",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "GBP"
+            }
+        }
+    </script>
+
+    <style>
+        body {
+          font-family: 'Inter', sans-serif;
+          margin: 0;
+          background: #f9fafb;
+          color: #111;
+        }
+
+        .hero {
+          opacity: 0;
+          position: absolute;
+          pointer-events: none;
+        }
+
+        body.no-js .hero {
+          opacity: 1;
+          position: static;
+          pointer-events: auto;
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+          font-weight: 700;
+          margin-bottom: 12px;
+          text-align: center;
+        }
+
+        .hero p {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 1.1rem;
+          color: #444;
+        }
+    </style>
+</head>
+
+<body class="no-js">
+    <div class="hero">
+        <h1>Simple API for Automated UK SIA Licence Verification</h1>
+        <p>
+            Reliable, scalable and developer-friendly SIA licence checks with clean JSON data —
+            no scraping, no manual work, and no upstream headaches.
+        </p>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script>
+        document.body.classList.remove("no-js");
+    </script>
+</body>
 </html>

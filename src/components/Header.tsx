@@ -18,9 +18,7 @@ export default function Header() {
           <div className="flex items-center gap-8">
             {/* Logo */}
             <a href="#" className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
-                <span className="font-bold text-primary-foreground text-lg">S</span>
-              </div>
+              <img src="/logo.png" alt="SIA Checker Logo" className="h-8 w-8 rounded"/>
               <span className="font-bold text-xl">SIA Checker</span>
             </a>
 
