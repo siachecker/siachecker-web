@@ -1,25 +1,23 @@
-import { Github, Twitter, Linkedin } from "lucide-react"
-
 export default function Footer() {
   const footerLinks = {
     Product: [
       { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#early-access" },
+      { label: "Join Waitlist", href: "#early-access" },
       { label: "Documentation", href: "https://docs.siachecker.co.uk" },
       { label: "API Status", href: "https://status.siachecker.co.uk" },
     ],
-    Company: [
-      { label: "About", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Contact", href: "#" },
-    ],
-    Legal: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Cookie Policy", href: "#" },
-      { label: "GDPR", href: "#" },
-    ],
+    // Company: [
+    //   { label: "About", href: "#" },
+    //   { label: "Blog", href: "#" },
+    //   { label: "Careers", href: "#" },
+    //   { label: "Contact", href: "#" },
+    // ],
+    // Legal: [
+    //   { label: "Privacy Policy", href: "#" },
+    //   { label: "Terms of Service", href: "#" },
+    //   { label: "Cookie Policy", href: "#" },
+    //   { label: "GDPR", href: "#" },
+    // ],
   }
 
   return (
@@ -29,25 +27,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
-                <span className="font-bold text-primary-foreground text-lg">S</span>
-              </div>
+              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8 w-8"/>
               <span className="font-bold text-xl">SIA Checker</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Developer-friendly API for UK SIA licence verification.
+              Reliable API for SIA Licence Verification in the UK.
             </p>
-            <div className="flex items-center space-x-3">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Links */}
