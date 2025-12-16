@@ -19,8 +19,8 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#" className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8 w-8"/>
-              <span className="font-bold text-xl">SIA Checker</span>
+              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8"/>
+              {/* <span className="font-bold text-xl">SIA Checker</span> */}
             </a>
           </div>
 

@@ -27,8 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8 w-8"/>
-              <span className="font-bold text-xl">SIA Checker</span>
+              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8"/>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Reliable API for SIA Licence Verification in the UK.
