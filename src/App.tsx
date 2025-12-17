@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import Features from "./sections/Features"
 import Hero from "./sections/Hero"
 // import Demo from "./sections/Demo"
-import EarlyAccess from "./sections/EarlyAccess"
+import Pricing from "./sections/Pricing"
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
         <Hero/>
         <Features/>
         {/* <Demo/> */}
-        <EarlyAccess/>
+        <Pricing/>
       </main>
       <Footer/>
     </div>

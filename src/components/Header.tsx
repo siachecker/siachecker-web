@@ -8,7 +8,8 @@ export default function Header() {
   const navLinks = [
     { href: "#features", label: "Features" },
     // { href: "#demo", label: "Live Demo" },
-    { href: "#early-access", label: "Join Waitlist" },
+    // { href: "#early-access", label: "Join Waitlist" },
+    { href: "#pricing", label: "Pricing" },
     { href: "https://docs.siachecker.co.uk", label: "Documentation" },
   ]
 

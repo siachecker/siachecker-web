@@ -5,43 +5,46 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Starter",
-    price: "0",
-    description: "Perfect for testing and small projects",
-    features: ["1,000 requests/month", "Basic API access", "Email support", "Documentation access", "99.9% uptime SLA"],
-    cta: "Start Free",
+    name: "Basic",
+    price: "5",
+    description: "Perfect for testing and small teams",
+    features: [
+      "100 checks per month",
+      "Best-effort availability",
+      "Email support",
+      "Manual API key",
+    ],
+    cta: "Start with Basic",
     popular: false,
+    paymentLink: "https://buy.stripe.com/9B63cogon6mq8WY202gw001",
   },
   {
-    name: "Professional",
-    price: "49",
-    description: "For growing businesses and applications",
+    name: "Standard",
+    price: "20",
+    description: "Built for production use and growing teams",
     features: [
-      "50,000 requests/month",
-      "Priority API access",
-      "Priority email support",
-      "Webhook notifications",
-      "99.95% uptime SLA",
-      "Dedicated account manager",
+      "1,000 checks per month",
+      "Best-effort availability",
+      "Email support",
+      "Manual API key",
     ],
-    cta: "Start Trial",
+    cta: "Start Standard",
     popular: true,
+    paymentLink: "https://buy.stripe.com/eVq4gs1tt26a0qs6gigw000",
   },
   {
     name: "Enterprise",
-    price: "Custom",
-    description: "For large-scale operations",
+    price: "On request",
+    description: "For high-volume use cases",
     features: [
-      "Unlimited requests",
-      "Dedicated infrastructure",
-      "24/7 phone support",
-      "Custom integrations",
-      "99.99% uptime SLA",
-      "SLA guarantees",
-      "Volume discounts",
+      "1,000+ checks per month",
+      "Priority email support",
+      "Custom solutions",
+      "Dedicated support",
     ],
     cta: "Contact Sales",
     popular: false,
+    paymentLink: "mailto:sales@siachecker.com",
   },
 ]
 
@@ -51,7 +54,7 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="mb-4 font-bold text-3xl md:text-4xl lg:text-5xl text-balance">Simple, transparent pricing</h2>
-          <p className="text-lg text-muted-foreground">Start free, scale as you grow. No hidden fees.</p>
+          <p className="text-lg text-muted-foreground">Only successful licence checks count. No charges for retries or failures.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -67,8 +70,8 @@ export default function Pricing() {
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
                 <div className="mt-4">
-                  <span className="font-bold text-4xl">{plan.price === "Custom" ? plan.price : `£${plan.price}`}</span>
-                  {plan.price !== "Custom" && <span className="text-muted-foreground">/month</span>}
+                  <span className="font-bold text-4xl">{plan.name === "Enterprise" ? plan.price : `£${plan.price}`}</span>
+                  {plan.name !== "Enterprise" && <span className="text-muted-foreground">/month</span>}
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
@@ -85,8 +88,11 @@ export default function Pricing() {
                 <Button
                   className={`w-full ${plan.popular ? "bg-accent hover:bg-accent/90" : ""}`}
                   variant={plan.popular ? "default" : "outline"}
+                  asChild
                 >
-                  {plan.cta}
+                  <a href={plan.paymentLink} target="_blank" rel="noopener noreferrer">
+                    {plan.cta}
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
@@ -94,7 +100,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-sm text-muted-foreground mt-8">
-          All plans include 14-day free trial. No credit card required.
+          Used by UK security companies for compliance and onboarding checks.
         </p>
       </div>
     </section>

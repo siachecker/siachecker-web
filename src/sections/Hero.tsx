@@ -66,7 +66,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button asChild size="lg" className="text-white text-lg px-8">
-              <a href="#early-access">
+              <a href="#pricing">
                 Get API access
                 <ArrowRight className="h-5 w-5" />
               </a>

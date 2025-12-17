@@ -2,7 +2,7 @@ export default function Footer() {
   const footerLinks = {
     Product: [
       { label: "Features", href: "#features" },
-      { label: "Join Waitlist", href: "#early-access" },
+      { label: "Pricing", href: "#pricing" },
       { label: "Documentation", href: "https://docs.siachecker.co.uk" },
       { label: "API Status", href: "https://status.siachecker.co.uk" },
     ],
