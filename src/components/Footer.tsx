@@ -7,8 +7,8 @@ export default function Footer() {
       { label: "API Status", href: "https://status.siachecker.co.uk" },
     ],
     Legal: [
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy.html" },
+      { label: "Terms of Service", href: "/terms.html" },
     ],
     Support: [
       { label: "Contact support", href: "mailto:help@siachecker.co.uk" },
