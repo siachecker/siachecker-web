@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: ShieldCheck,
-    title: "Reliable Verification",
+    title: "Reliable Checks",
     description: "Automatic retries, smart caching, and resilience against upstream changes keep your checks running.",
   },
   {
@@ -20,7 +20,7 @@ const features = [
   {
     icon: Gauge,
     title: "Fair Billing",
-    description: "You only pay for real upstream lookups — cached results, retries, and failures cost nothing.",
+    description: "You only pay for real upstream lookups – cached results, retries, and failures cost nothing.",
   },
   {
     icon: Workflow,
@@ -30,7 +30,7 @@ const features = [
   {
     icon: ServerOff,
     title: "Zero Infrastructure",
-    description: "No servers, cron jobs, or maintenance — we run the entire verification pipeline for you.",
+    description: "No servers, cron jobs, or maintenance – we run the entire checks pipeline for you.",
   },
 ]
 

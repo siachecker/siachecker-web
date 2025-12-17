@@ -30,14 +30,14 @@ export default function EarlyAccess() {
         setStatus("error")
         setMessage("Something went wrong. Please try again.")
       }
-    } catch (error) {
+    } catch {
       setStatus("error")
       setMessage("Something went wrong. Please try again.")
     }
   }
 
   return (
-    <section id="early-access" className="py-16 md:py-24 bg-brand-50/50">
+    <section id="early-access" className="py-16 md:py-24 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl">
           <Card className="border-2 border-brand-200">

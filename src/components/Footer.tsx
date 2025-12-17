@@ -30,7 +30,7 @@ export default function Footer() {
               <img src="/logo.svg" alt="SIA Checker Logo" className="h-8"/>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Reliable API for SIA Licence Verification in the UK.
+              Reliable API for SIA Licence Checks in the UK.
             </p>
           </div>
 

@@ -1,12 +1,13 @@
 import { useState } from "react"
+// import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    // { href: "#livedemo", label: "Live Demo" },
     { href: "#features", label: "Features" },
+    // { href: "#demo", label: "Live Demo" },
     { href: "#early-access", label: "Join Waitlist" },
     { href: "https://docs.siachecker.co.uk", label: "Documentation" },
   ]
@@ -16,12 +17,9 @@ export default function Header() {
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <a href="#" className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8"/>
-              {/* <span className="font-bold text-xl">SIA Checker</span> */}
-            </a>
-          </div>
+          <a href="#" className="flex items-center space-x-2">
+            <img src="/logo.svg" alt="SIA Checker Logo" className="h-8" />
+          </a>
 
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center space-x-6 absolute left-1/2 -translate-x-1/2">
@@ -41,14 +39,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           {/* <div className="hidden md:flex items-center space-x-4">
-            <a href="#signin"
-                className="font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Sign In
+            <Button asChild variant="outline" size="lg" className="text-lg px-8">
+              <a href="#demo">
+                Live Demo
               </a>
-              <Button size="lg" className="text-white text-lg px-8 cursor-pointer">
-                Get started
-              </Button>
+            </Button>
           </div> */}
 
           {/* Mobile Menu Button */}
@@ -72,11 +67,10 @@ export default function Header() {
                 </a>
               ))}
               {/* <div className="flex flex-col space-y-2 pt-3">
-                <Button variant="ghost" size="sm">
-                  Sign In
-                </Button>
-                <Button size="sm" className="bg-accent hover:bg-accent/90">
-                  Get started
+                <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                  <a href="#demo" onClick={() => setIsMobileMenuOpen(false)}>
+                    Live Demo
+                  </a>
                 </Button>
               </div> */}
             </nav>
