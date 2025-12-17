@@ -44,7 +44,7 @@ const plans = [
     ],
     cta: "Contact Sales",
     popular: false,
-    paymentLink: "mailto:sales@siachecker.com",
+    paymentLink: "mailto:sales@siachecker.co.uk",
   },
 ]
 

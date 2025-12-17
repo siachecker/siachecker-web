@@ -6,18 +6,13 @@ export default function Footer() {
       { label: "Documentation", href: "https://docs.siachecker.co.uk" },
       { label: "API Status", href: "https://status.siachecker.co.uk" },
     ],
-    // Company: [
-    //   { label: "About", href: "#" },
-    //   { label: "Blog", href: "#" },
-    //   { label: "Careers", href: "#" },
-    //   { label: "Contact", href: "#" },
-    // ],
-    // Legal: [
-    //   { label: "Privacy Policy", href: "#" },
-    //   { label: "Terms of Service", href: "#" },
-    //   { label: "Cookie Policy", href: "#" },
-    //   { label: "GDPR", href: "#" },
-    // ],
+    Legal: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+    ],
+    Support: [
+      { label: "Contact support", href: "mailto:help@siachecker.co.uk" },
+    ],
   }
 
   return (
@@ -27,10 +22,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8"/>
+              <img src="/logo.svg" alt="SIA Checker Logo" className="h-8" />
             </div>
-            <p className="text-sm text-muted-foreground mb-4">
-              Reliable API for SIA Licence Checks in the UK.
+            <p className="text-sm text-muted-foreground mb-2">
+              Automated SIA licence check API for UK security companies.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Independent service. Not affiliated with the Security Industry Authority (SIA).
             </p>
           </div>
 
@@ -55,8 +53,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 SIA Checker. All rights reserved.</p>
-          <p className="text-sm text-muted-foreground">Built for developers. Powered by UK data.</p>
+          <p className="text-sm text-muted-foreground">
+            © 2025 SIA Checker. All rights reserved.
+          </p>
+          <p className="text-sm text-muted-foreground text-center md:text-right">
+            Built for developers. Powered by UK data from the public SIA Register.
+          </p>
         </div>
       </div>
     </footer>
