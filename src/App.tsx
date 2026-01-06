@@ -4,6 +4,7 @@ import Features from "./sections/Features"
 import Hero from "./sections/Hero"
 // import Demo from "./sections/Demo"
 import Pricing from "./sections/Pricing"
+import FAQ from "./sections/FAQ"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Features/>
         {/* <Demo/> */}
         <Pricing/>
+        <FAQ/>
       </main>
       <Footer/>
     </div>
