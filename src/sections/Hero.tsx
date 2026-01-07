@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Code } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -19,27 +19,27 @@ export default function Hero() {
           <div className="absolute inset-0 overflow-hidden">
             {/* Purple wave - main brand color */}
             <div
-              className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-br from-brand-500 to-brand-700 opacity-50 blur-3xl"
+              className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-br from-brand-500 to-brand-700 opacity-40 blur-3xl"
               style={{ top: '-10%', left: '10%' }}
             />
             {/* Cyan wave */}
             <div
-              className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 opacity-45 blur-3xl"
+              className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 opacity-35 blur-3xl"
               style={{ top: '20%', right: '15%' }}
             />
             {/* Red/Pink wave */}
             <div
-              className="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-br from-rose-400 to-pink-500 opacity-40 blur-3xl"
+              className="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-br from-rose-400 to-pink-500 opacity-30 blur-3xl"
               style={{ bottom: '10%', left: '30%' }}
             />
             {/* Yellow wave */}
             <div
-              className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-yellow-300 to-amber-400 opacity-45 blur-3xl"
+              className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-yellow-300 to-amber-400 opacity-35 blur-3xl"
               style={{ top: '30%', left: '50%' }}
             />
             {/* Additional brand accent */}
             <div
-              className="absolute w-[550px] h-[550px] rounded-full bg-gradient-to-br from-brand-400 to-brand-600 opacity-50 blur-3xl"
+              className="absolute w-[550px] h-[550px] rounded-full bg-gradient-to-br from-brand-400 to-brand-600 opacity-40 blur-3xl"
               style={{ bottom: '0%', right: '20%' }}
             />
           </div>
@@ -51,37 +51,36 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="mb-6 font-bold text-5xl md:text-6xl lg:text-7xl tracking-tight text-balance">
-            Reliable API for SIA{" "}
+            Automated SIA licence checks for{" "}
             <span className="bg-gradient-to-r from-brand-700 via-brand-700 to-brand-800 bg-clip-text text-transparent">
-              Licence Checks
+               compliance workflows
             </span>
           </h1>
 
           {/* Subheading */}
           <p className="mb-8 text-lg md:text-xl text-slate-700 max-w-2xl mx-auto text-pretty">
-            Fast, reliable and developer-friendly SIA licence checks designed for
-            security companies and automated compliance workflows.
+            Verify SIA licences automatically with zero manual checks, smart retries, and predictable JSON responses.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button asChild size="lg" className="text-white text-lg px-8">
-              <a href="#pricing">
-                Get API access
+              <a href="#livecheck">
+                Try a live check
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
-            {/* <Button
+            <Button
               asChild
               size="lg"
               variant="outline"
               className="text-lg px-8"
             >
-              <a href="#demo">
-                <Play className="mr-2 h-5 w-5" />
-                Try it now
+              <a href="https://docs.siachecker.co.uk" target="_blank" rel="noopener noreferrer">
+                <Code className="mr-2 h-5 w-5" />
+                View API docs
               </a>
-            </Button> */}
+            </Button>
           </div>
 
           {/* Code Example */}

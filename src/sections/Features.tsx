@@ -4,7 +4,7 @@ import { Zap, ShieldCheck, Gauge, Code, Workflow, ServerOff } from "lucide-react
 const features = [
   {
     icon: Code,
-    title: "Developer-Friendly API",
+    title: "Developer First API",
     description: "Clean REST design, clear documentation, and predictable JSON responses.",
   },
   {
@@ -14,7 +14,7 @@ const features = [
   },
   {
     icon: Zap,
-    title: "Lightning Fast",
+    title: "Low latency responses",
     description: "Optimized processing and caching deliver consistently low-latency responses.",
   },
   {
@@ -37,11 +37,11 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-16 md:py-24 bg-slate-50">
+    <section id="features" className="bg-slate-50/70 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="mb-4 font-bold text-3xl md:text-4xl lg:text-5xl text-balance">
-            Everything you need to verify SIA licences
+            Built for compliance teams and developers
           </h2>
           <p className="text-lg text-slate-600 text-pretty">
             Purpose-built API with all the features developers need for seamless integration.

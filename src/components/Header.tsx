@@ -1,15 +1,15 @@
 import { useState } from "react"
-// import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navLinks = [
+    { href: "#livecheck", label: "Live check" },
     { href: "#features", label: "Features" },
-    // { href: "#demo", label: "Live Demo" },
-    // { href: "#early-access", label: "Join Waitlist" },
     { href: "#pricing", label: "Pricing" },
+    { href: "#faq", label: "FAQ" },
     { href: "https://docs.siachecker.co.uk", label: "Documentation" },
   ]
 
@@ -28,7 +28,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className="text-[15px] font-medium text-slate-600 hover:text-brand-700 transition-colors"
               >
                 {link.label}
               </a>
@@ -39,13 +39,13 @@ export default function Header() {
           <div className="hidden md:block w-[120px]"></div>
 
           {/* CTA Buttons */}
-          {/* <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <Button asChild variant="outline" size="lg" className="text-lg px-8">
-              <a href="#demo">
-                Live Demo
+              <a href="#pricing">
+                Get API access
               </a>
             </Button>
-          </div> */}
+          </div>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -67,13 +67,13 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              {/* <div className="flex flex-col space-y-2 pt-3">
+              <div className="flex flex-col space-y-2 pt-3">
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                  <a href="#demo" onClick={() => setIsMobileMenuOpen(false)}>
-                    Live Demo
+                  <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)}>
+                    Get API access
                   </a>
                 </Button>
-              </div> */}
+              </div>
             </nav>
           </div>
         )}
