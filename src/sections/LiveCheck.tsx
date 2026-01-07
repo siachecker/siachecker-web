@@ -88,7 +88,7 @@ export default function LiveCheck() {
             <div className="mb-6 flex items-center justify-center gap-3 text-sm text-slate-500">
               <span>Live SIA register data</span>
               <span className="h-3 w-px bg-slate-300" />
-              <span>5 free checks per day</span>
+              <span>20 free checks per day</span>
               <span className="h-3 w-px bg-slate-300" />
               <span>No account required</span>
             </div>
