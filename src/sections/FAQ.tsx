@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: "How do I renew or manage my API key?",
-    answer: "We provide personalized onboarding and account management to ensure your integration runs smoothly. For API key renewal, account settings, or any account-related questions, please contact us at sales@siachecker.co.uk and our team will assist you directly.",
+    answer: "We provide personalized onboarding and account management to ensure your integration runs smoothly. For API key renewal, account settings, or any account-related questions, please contact us at hello@siachecker.co.uk and our team will assist you directly.",
   },
   {
     question: "Can you help integrate the API with my system?",
-    answer: "Yes! We offer integration support to help you seamlessly incorporate our SIA verification API into your existing systems. Whether you're building a new onboarding platform or adding verification to your current workflow, our team can provide technical guidance and assistance. Contact us at sales@siachecker.co.uk to discuss your integration needs.",
+    answer: "Yes! We offer integration support to help you seamlessly incorporate our SIA verification API into your existing systems. Whether you're building a new onboarding platform or adding verification to your current workflow, our team can provide technical guidance and assistance. Contact us at hello@siachecker.co.uk to discuss your integration needs.",
   },
   {
     question: "How quickly can I get verification results?",
@@ -76,7 +76,7 @@ export default function FAQ() {
           <p className="text-muted-foreground">
             Still have questions?{" "}
             <a
-              href="mailto:sales@siachecker.co.uk"
+              href="mailto:hello@siachecker.co.uk"
               className="text-primary hover:underline font-medium"
             >
               Contact our team

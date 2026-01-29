@@ -11,7 +11,7 @@ export default function Footer() {
       { label: "Terms of Service", href: "/terms.html" },
     ],
     Support: [
-      { label: "Contact support", href: "mailto:help@siachecker.co.uk" },
+      { label: "Contact support", href: "mailto:hello@siachecker.co.uk" },
     ],
   }
 
