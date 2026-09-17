@@ -3,6 +3,15 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Check } from "lucide-react"
 
+const salesEmail = "hello@siachecker.co.uk"
+
+function createContactLink(planName: string) {
+  const subject = `SIA Checker ${planName} plan enquiry`
+  const body = `Hello,\n\nI'm interested in the ${planName} plan. Please send me details on how to get started.\n\nThank you.`
+
+  return `mailto:${salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+}
+
 const plans = [
   {
     name: "Basic",
@@ -16,7 +25,7 @@ const plans = [
     ],
     cta: "Start with Basic",
     popular: false,
-    paymentLink: "https://buy.stripe.com/9B63cogon6mq8WY202gw001",
+    contactLink: createContactLink("Basic"),
   },
   {
     name: "Standard",
@@ -30,7 +39,7 @@ const plans = [
     ],
     cta: "Start Standard",
     popular: true,
-    paymentLink: "https://buy.stripe.com/eVq4gs1tt26a0qs6gigw000",
+    contactLink: createContactLink("Standard"),
   },
   {
     name: "Enterprise",
@@ -44,7 +53,7 @@ const plans = [
     ],
     cta: "Contact Sales",
     popular: false,
-    paymentLink: "mailto:hello@siachecker.co.uk",
+    contactLink: createContactLink("Enterprise"),
   },
 ]
 
@@ -90,9 +99,7 @@ export default function Pricing() {
                   variant={plan.popular ? "default" : "outline"}
                   asChild
                 >
-                  <a href={plan.paymentLink} target="_blank" rel="noopener noreferrer">
-                    {plan.cta}
-                  </a>
+                  <a href={plan.contactLink}>{plan.cta}</a>
                 </Button>
               </CardFooter>
             </Card>
